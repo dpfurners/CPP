@@ -5,4 +5,4 @@ I want to learn the C++ Programming Language and want to keep track of my progre
 I found a tutorial on YT from NESO Academy. If you want to check it out go ahead: 
 [C++ Tutorial](https://www.youtube.com/playlist?list=PLBlnK6fEyqRh6isJ01MBnbNpV3ZsktSyS)
 
-# My current Progress:
+# My current Progress is also documented [here](https://github.com/dpfurners/CPP/blob/master/progress.md).
