@@ -12,5 +12,6 @@ I have documented every day i did something to learn/improve my Programming Skil
 - A Simple C++ Program
   - main function -> entry point of the program
   - install the Compiler
-  - how to compile a program in the command line [here](https://github.com/dpfurners/CPP/blob/master/README.md#Steps-(Windows-Command-Prompt))
-  - how to compile a program in CLion [here](https://github.com/dpfurners/CPP/blob/master/README.md#Steps-(Clion))
+  - write a simple program that prints "Hello World" [here](https://github.com/dpfurners/CPP/blob/master/01_FirstProgram/test.cpp)
+  - how to compile a program in the command line [here](https://github.com/dpfurners/CPP/blob/master/README.md#steps-windows-command-prompt)
+  - how to compile a program in CLion [here](https://github.com/dpfurners/CPP/blob/master/README.md#steps-clion)
