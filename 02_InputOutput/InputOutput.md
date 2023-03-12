@@ -30,5 +30,10 @@ std::cout << "The sum of " << n1 << " and " << n2
 << " is " << n1 + n2 << std::endl;
 return 0;
 }
-
+```
+Output:
+```bash
+Enter two numbers:
+5 6
+The sum of 5 and 6 is 11
 ```
