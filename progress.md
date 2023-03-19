@@ -21,3 +21,10 @@ I have documented every day i did something to learn/improve my Programming Skil
   - use the `std::cin` object to input data
   - use the `std::endl` manipulator to end a line
   - write a simple [code](https://github.com/dpfurners/CPP/blob/master/02_InputOutput/input-output.cpp)
+
+#### 19th
+- Namespaces ([docs](https://github.com/dpfurners/CPP/blob/master/03_Namespaces/Namespaces.md)
+  - what is a namespace
+  - how to use namespaces
+  - how to use the `std` namespace
+  - how to use the `using` keyword
