@@ -29,3 +29,4 @@ I have documented every day i did something to learn/improve my Programming Skil
   - how to use the `std` namespace
   - how to use the `using` keyword
 - Comments ([docs](https://github.com/dpfurners/CPP/blob/master/04_Comments/Comments.md)
+- While Loop ([docs](https://github.com/dpfurners/CPP/blob/master/05_Loops/Loops.md#while-loop)
