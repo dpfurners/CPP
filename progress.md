@@ -23,10 +23,13 @@ I have documented every day i did something to learn/improve my Programming Skil
   - write a simple [code](https://github.com/dpfurners/CPP/blob/master/02_InputOutput/input-output.cpp)
 
 #### 19th
-- Namespaces ([docs](https://github.com/dpfurners/CPP/blob/master/03_Namespaces/Namespaces.md)
+- Namespaces ([docs](https://github.com/dpfurners/CPP/blob/master/03_Namespaces/Namespaces.md))
   - what is a namespace
   - how to use namespaces
   - how to use the `std` namespace
   - how to use the `using` keyword
-- Comments ([docs](https://github.com/dpfurners/CPP/blob/master/04_Comments/Comments.md)
-- While Loop ([docs](https://github.com/dpfurners/CPP/blob/master/05_Loops/Loops.md#while-loop)
+- Comments ([docs](https://github.com/dpfurners/CPP/blob/master/04_Comments/Comments.md))
+- While Loop ([docs](https://github.com/dpfurners/CPP/blob/master/05_Loops/Loops.md#while-loop))
+
+#### 20th
+- For Loop ([docs](https://github.com/dpfurners/CPP/blob/master/05_Loops/Loops.md#for-loop))
