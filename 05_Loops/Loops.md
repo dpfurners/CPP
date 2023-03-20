@@ -56,3 +56,24 @@ int main()
     return 0;
 }
 ```
+
+#### Using istream as a condition
+
+The istream object can be used as a condition in a loop.<br>
+If the input does not match the expected type, the loop will stop.
+
+The following program reads an unknown amount of inputs from the user and prints the sum of all the inputs.<br>
+When the user enters a non-numeric value (or an EOF -> Ctrl + Z), the program stops reading inputs and prints the sum.
+
+```cpp
+# include <iostream>
+
+int main()
+{
+    int sum = 0, value = 0;
+    while (std::cin >> value)
+        sum += value;
+    std::cout << "Sum is: " << sum << std::endl;
+    return 0;
+}
+```

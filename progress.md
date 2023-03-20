@@ -33,3 +33,4 @@ I have documented every day i did something to learn/improve my Programming Skil
 
 #### 20th
 - For Loop ([docs](https://github.com/dpfurners/CPP/blob/master/05_Loops/Loops.md#for-loop))
+- Istream as a condition ([docs](https://github.com/dpfurners/CPP/blob/master/05_Loops/Loops.md#using-istream-as-a-condition))
