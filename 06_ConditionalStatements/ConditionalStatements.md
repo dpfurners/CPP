@@ -57,3 +57,55 @@ int main()
     return 0;
 }
 ```
+
+#### The `else if` Statement
+
+- The `else if` statement is used to execute a sequence of instructions if the condition is false and another condition is true.
+- The `else if` statement can be used multiple times in a single `if` statement.
+
+Syntax:
+```cpp
+if (condition1)
+{
+    // sequence of instructions, if condition1 is true
+}
+else if (condition2)
+{
+    // sequence of instructions, if condition1 is false and condition2 is true
+}
+else if (condition3)
+{
+    // sequence of instructions, if condition1 is false, condition2 is false and condition3 is true
+}
+else
+{
+    // sequence of instructions, if all conditions are false
+}
+```
+
+Example:
+```cpp
+# include <iostream>
+
+int main()
+{
+    int num = 0;
+    std::cout << "Enter a number: " << std::endl;
+    std::cin >> num;
+    if (num > 10)
+    {
+        std::cout << "The number is greater than 10" << std::endl;
+    }
+    else if (num < 10)
+    {
+        std::cout << "The number is less than 10" << std::endl;
+    }
+    else
+    {
+        std::cout << "The number is equal to 10" << std::endl;
+    }
+    return 0;
+}
+```
+
+Example (count the amount of equal numbers in an input):
