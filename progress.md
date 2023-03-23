@@ -38,5 +38,3 @@ I have documented every day i did something to learn/improve my Programming Skil
 
 #### 21st
 - First small Project: [Guessing Game](https://github.com/dpfurners/CPP/blob/master/00_Projects/00_GuessingGame))
-
-#### 23rd
