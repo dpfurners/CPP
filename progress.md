@@ -1,5 +1,5 @@
 # This is my current Progress
-I have documented every day i did something to learn/improve my Programming Skills
+I have documented every day i did something to learn/improve my Programming Skills in C++
 
 # 2023
 
@@ -37,7 +37,7 @@ I have documented every day i did something to learn/improve my Programming Skil
 - If-Else (Conditional Statement) ([docs](https://github.com/dpfurners/CPP/blob/master/06_ConditionalStatements/ConditionalStatements.md#using-istream-as-a-condition))
 
 #### 21st
-- First small Project: [Guessing Game](https://github.com/dpfurners/CPP/blob/master/00_Projects/00_GuessingGame))
+- First small Project: [Guessing Game](https://github.com/dpfurners/CPP/blob/master/00_Projects/00_GuessingGame)
 
 #### 23rd
 - Primitive Data Types ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#primitive-types))
