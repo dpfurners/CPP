@@ -46,3 +46,9 @@ I have documented every day i did something to learn/improve my Programming Skil
 - Type Conversions ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#type-conversions))
 - Literals ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#literals))
 - Escape Sequences ([docs](https://github.com/dpfurners/CPP/blob/master/08_EscapeSequences/EscapeSequences.md))
+- Variables ([docs](https://github.com/dpfurners/CPP/blob/master/09_Variables/Variables.md))
+  - Declare Variables
+  - Initialize Variables
+  - Identifiers
+  - Variable Scope
+  - Nested Scope
