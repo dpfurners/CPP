@@ -38,3 +38,9 @@ I have documented every day i did something to learn/improve my Programming Skil
 
 #### 21st
 - First small Project: [Guessing Game](https://github.com/dpfurners/CPP/blob/master/00_Projects/00_GuessingGame))
+
+#### 23rd
+- Primitive Data Types ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#primitive-types))
+- Signed and Unsigned Integers ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#signed-and-unsigned-integers))
+- Data Types on Machine Level ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#machine-level-representation-data-types))
+- Type Conversions ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#type-conversions))
