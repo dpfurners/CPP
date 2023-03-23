@@ -85,3 +85,63 @@ Explicit conversions are performed by the programmer.
 int i = static_cast<int>(3.14); // i = 3
 unsigned char c = static_cast<unsigned char>(-1); // c = 255
 ```
+
+#### Literals
+
+A literal is a notation for representing a fixed value in source code.
+
+```cpp
+int i = 42; // 42 is a literal
+```
+
+##### Integer Literals
+
+Integer literals can be written in decimal, octal, or hexadecimal notation.
+
+Example: 25
+```cpp
+int i1 = 25;    // decimal
+int i2 = 031;   // octal
+int i3 = 0x19;  // hexadecimal
+```
+
+##### Floating-Point Literals
+
+Floating-point literals can be written in decimal or scientific notation.
+
+Example: 3.14
+```cpp
+double d1 = 3.14;   // decimal
+double d2 = 31.4e-1 // scientific
+```
+
+##### Character Literals
+
+Character literals are written with single quotes.
+
+Example: 'a'
+```cpp
+char c1 = 'a';  // character
+char c2 = '\141';   // octal
+char c3 = '\x61';   // hexadecimal
+```
+
+##### String Literals
+
+String literals are written with double quotes.
+
+Example: "Hello World"
+```cpp
+char s1[] = "Hello World";  // string
+```
+
+##### Boolean Literals
+
+Boolean literals are either `true` or `false`.
+
+```cpp
+bool b1 = true;
+bool b2 = false;
+```
+
+

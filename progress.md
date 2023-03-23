@@ -44,3 +44,4 @@ I have documented every day i did something to learn/improve my Programming Skil
 - Signed and Unsigned Integers ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#signed-and-unsigned-integers))
 - Data Types on Machine Level ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#machine-level-representation-data-types))
 - Type Conversions ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#type-conversions))
+- Literals ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#literals))
