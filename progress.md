@@ -3,12 +3,12 @@ I have documented every day i did something to learn/improve my Programming Skil
 
 # 2023
 
-### March
+## March
 
-#### 3rd
+### 3rd
 - Get a small introduction of [C++](https://github.com/dpfurners/CPP/blob/master/README.md#introduction-to-c)
 
-#### 4th
+### 4th
 - A Simple C++ Program
   - main function -> entry point of the program
   - install the Compiler
@@ -22,7 +22,7 @@ I have documented every day i did something to learn/improve my Programming Skil
   - use the `std::endl` manipulator to end a line
   - write a simple [code](https://github.com/dpfurners/CPP/blob/master/02_InputOutput/input-output.cpp)
 
-#### 19th
+### 19th
 - Namespaces ([docs](https://github.com/dpfurners/CPP/blob/master/03_Namespaces/Namespaces.md))
   - what is a namespace
   - how to use namespaces
@@ -31,15 +31,15 @@ I have documented every day i did something to learn/improve my Programming Skil
 - Comments ([docs](https://github.com/dpfurners/CPP/blob/master/04_Comments/Comments.md))
 - While Loop ([docs](https://github.com/dpfurners/CPP/blob/master/05_Loops/Loops.md#while-loop))
 
-#### 20th
+### 20th
 - For Loop ([docs](https://github.com/dpfurners/CPP/blob/master/05_Loops/Loops.md#for-loop))
 - Istream as a condition ([docs](https://github.com/dpfurners/CPP/blob/master/05_Loops/Loops.md#using-istream-as-a-condition))
 - If-Else (Conditional Statement) ([docs](https://github.com/dpfurners/CPP/blob/master/06_ConditionalStatements/ConditionalStatements.md#using-istream-as-a-condition))
 
-#### 21st
+### 21st
 - First small Project: [Guessing Game](https://github.com/dpfurners/CPP/blob/master/00_Projects/00_GuessingGame)
 
-#### 23rd
+### 23rd
 - Primitive Data Types ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#primitive-types))
 - Signed and Unsigned Integers ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#signed-and-unsigned-integers))
 - Data Types on Machine Level ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#machine-level-representation-data-types))

@@ -1,4 +1,4 @@
-## Input and Output in C++
+# Input and Output in C++
 
 To use input and output in C++ we need to include the `iostream` library.
 This Library defines the standard input/output stream objects.

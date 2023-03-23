@@ -1,11 +1,11 @@
-### Loops in C++
+# Loops in C++
 
 A **Loop** is a programming structure that repeats a sequence of instructions until a specific condition is met.
 - The condition is evaluated before each iteration.
 - If the condition is true, the sequence of instructions is executed.
 - If the condition is false, the sequence of instructions is skipped and the next statement after the loop is executed.
 
-#### While Loop
+## While Loop
 
 A **While Loop** repeats a sequence of instructions while a condition is true.
 
@@ -32,7 +32,7 @@ int main()
 }
 ```
 
-#### For Loop
+## For Loop
 A **For Loop** repeats a sequence of instructions for a specific number of times.
 
 Syntax:
@@ -57,7 +57,7 @@ int main()
 }
 ```
 
-#### Using istream as a condition
+## Using istream as a condition
 
 The istream object can be used as a condition in a loop.<br>
 If the input does not match the expected type, the loop will stop.

@@ -1,12 +1,10 @@
-## Namespaces in C++
+# Namespaces in C++
 
 A **Namespace** is a declarative region that provides a scope to the identifiers (the names of types, functions, variables, etc) inside it.
 
 **Namespaces** are used to organize code into logical groups and to prevent name collisions that can occur especially when your code base includes multiple libraries.
 
-### The `std` Namespace
-
-#### Use the `std` Namespace "normally"
+## Use the `std` Namespace "normally"
 
 When we use the `std::cout` object, we are using the `std` namespace.
 ```cpp
@@ -22,7 +20,7 @@ int main()
 }
 ```
 
-#### Using `cout` without the `std::` prefix
+## Using `cout` without the `std::` prefix
 
 A **using** declaration can be used to import a name from a namespace into the current scope.
 
@@ -40,7 +38,7 @@ int main()
 }
 ```
 
-#### Using `cout`, `cin` and `endl` without the `std::` prefix
+## Using `cout`, `cin` and `endl` without the `std::` prefix
 `cin` and `endl` can not be used without the `std::` prefix because it is not declared in the scope.
 
 But we can include the `using` declaration for `std::cin`/`srd::endl` as well.
@@ -61,7 +59,7 @@ int main()
 }
 ```
 
-#### `using` directive (include a whole namespace)
+## `using` directive (include a whole namespace)
 
 We can also use the `using` directive to import all names from a namespace into the current scope.
 

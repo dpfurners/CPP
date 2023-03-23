@@ -1,4 +1,4 @@
-### DataTypes in C++
+# DataTypes in C++
 
 A **Data Type** is a classification of data that determines the possible values for that type, the operations that can be performed on values of that type, and the meaning of the data.
 
@@ -10,7 +10,7 @@ Separated into:
 - User Defined Types
   - Mechanisms for creating new types
 
-#### Primitive Types
+## Primitive Types
 
 These Types are Defined in the C++ Language itself.
 
@@ -38,7 +38,7 @@ These Types are Defined in the C++ Language itself.
     - ...
 - **Void (Special Type)**
 
-#### Signed and Unsigned Integers
+## Signed and Unsigned Integers
 
 - Signed: Can be positive or negative
 - Unsigned: Can only be positive
@@ -57,18 +57,18 @@ Unlike to other integer types, there are 3 distinct basic character types:
 
 How the `char` type is interpreted depends on the compiler and the platform.
 
-#### Machine-Level Representation Data Types
+## Machine-Level Representation Data Types
 
 The Type determines how the data is stored in memory. It also determines, how many bits are used and how to interpret those bits.
 
 
-#### Type Conversions
+## Type Conversions
 
 The ability to convert between types is a fundamental feature of C++.
 
 These conversions can be done implicitly or explicitly.
 
-##### Implicit Conversions
+### Implicit Conversions
 
 Implicit conversions are performed automatically by the compiler.
 
@@ -77,7 +77,7 @@ int i = 3.14; // i = 3
 unsigned char c = -1; // c = 255
 ```
 
-##### Explicit Conversions
+### Explicit Conversions
 
 Explicit conversions are performed by the programmer.
 
@@ -86,7 +86,7 @@ int i = static_cast<int>(3.14); // i = 3
 unsigned char c = static_cast<unsigned char>(-1); // c = 255
 ```
 
-#### Literals
+## Literals
 
 A literal is a notation for representing a fixed value in source code.
 
@@ -94,7 +94,7 @@ A literal is a notation for representing a fixed value in source code.
 int i = 42; // 42 is a literal
 ```
 
-##### Integer Literals
+### Integer Literals
 
 Integer literals can be written in decimal, octal, or hexadecimal notation.
 
@@ -105,7 +105,7 @@ int i2 = 031;   // octal
 int i3 = 0x19;  // hexadecimal
 ```
 
-##### Floating-Point Literals
+### Floating-Point Literals
 
 Floating-point literals can be written in decimal or scientific notation.
 
@@ -115,7 +115,7 @@ double d1 = 3.14;   // decimal
 double d2 = 31.4e-1 // scientific
 ```
 
-##### Character Literals
+### Character Literals
 
 Character literals are written with single quotes.
 
@@ -126,7 +126,7 @@ char c2 = '\141';   // octal
 char c3 = '\x61';   // hexadecimal
 ```
 
-##### String Literals
+### String Literals
 
 String literals are written with double quotes.
 
@@ -135,7 +135,7 @@ Example: "Hello World"
 char s1[] = "Hello World";  // string
 ```
 
-##### Boolean Literals
+### Boolean Literals
 
 Boolean literals are either `true` or `false`.
 
@@ -143,5 +143,3 @@ Boolean literals are either `true` or `false`.
 bool b1 = true;
 bool b2 = false;
 ```
-
-

@@ -1,9 +1,9 @@
-### Conditional Statements in C++
+# Conditional Statements in C++
 
 A **Conditional Statement** is a programming structure that executes a sequence of instructions if a specific condition is met.
 
 
-#### If-Else Statement
+## If-Else Statement
 
 - The `if` statement is used to execute a sequence of instructions if a condition is true.
 - The `else` statement is used to execute a sequence of instructions if the condition is false. (optional)
@@ -58,7 +58,7 @@ int main()
 }
 ```
 
-#### The `else if` Statement
+## The `else if` Statement
 
 - The `else if` statement is used to execute a sequence of instructions if the condition is false and another condition is true.
 - The `else if` statement can be used multiple times in a single `if` statement.
