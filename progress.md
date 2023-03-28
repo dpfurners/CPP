@@ -52,3 +52,6 @@ I have documented every day i did something to learn/improve my Programming Skil
   - Identifiers
   - Variable Scope
   - Nested Scope
+
+### 28th
+- Compound Data Types ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#compound-data-types))

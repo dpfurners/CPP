@@ -143,3 +143,73 @@ Boolean literals are either `true` or `false`.
 bool b1 = true;
 bool b2 = false;
 ```
+
+## Compound Data Types
+
+Type that is made up of other types.
+
+### References
+
+A reference is an alias for an object or a function.
+
+- Once a reference is initialized, it cannot be changed to refer to another object.
+- There is no way to rebind a reference to another object.
+- A reference is not an object, it is just another name for an object.
+- Operations on references are exactly the same as operations on the object to which the reference refers.
+- Reference and the object to which it refers must be of the **same type**.
+
+Defining a reference:
+```cpp
+int i = 42;
+
+// define a reference to i
+int& r = i;
+
+// define a reference to a reference
+int& r2 = r;
+
+int& r3; // error: a reference must be initialized
+
+int &r4 = 42; // error: rvalue reference initializer must be an object
+```
+
+### Pointers
+
+A pointer is a variable that stores the address of another variable.
+
+- A pointer is an object in its own right.
+- Pointers can be assigned and copied. -> a single pointer can be made to point to different objects over its lifetime.
+- A pointer need not be initialized at the time it is defined.
+- We get the address of an object using the `&` operator.
+- The type of the pointer must match the type of the object to which the pointer points.
+- null pointer: a pointer that is not associated with any object.
+
+Defining a pointer:
+```cpp
+int i = 42;
+
+// define a pointer to i
+int* p = &i;
+
+// define a pointer to a pointer
+int** p2 = &p;
+
+int* p3; // ok: p3 is not initialized
+
+p3 = &i; // ok: p3 is now initialized
+
+int* p4 = 0; // ok: p4 is initialized to the null pointer
+int* p5 = nullptr; // ok: p5 is initialized to the null pointer
+int* p6 = NULL; // ok: p6 is initialized to the null pointer
+```
+
+Access the value of a pointer:
+```cpp
+int i = 42;
+
+int* p = &i;
+
+std::cout << p << std::endl; // prints the adddress of i
+std::cout << *p << std::endl; // prints 42
+```
+
