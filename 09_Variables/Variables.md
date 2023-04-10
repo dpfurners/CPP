@@ -114,3 +114,154 @@ int main() {
     return 0;
 }
 ```
+
+## Constants
+
+- Constants are values that cannot be changed.
+- Constants can be declared using the `const` keyword.
+- Constants can be declared using the `#define` preprocessor directive.
+- A Constant must be initialized when it is declared.
+
+Example:
+```cpp
+const int a = 10; // Declare a constant named a of type int
+#define b 20 // Declare a constant named b of type int
+```
+
+Constants are Local to the File except you use the `extern` keyword.
+
+Example:
+```cpp
+// file1.cpp
+extern const int a = 10; // Declare a constant named a of type int
+```
+
+```cpp
+// file2.cpp
+extern const int a; // Declare a constant named a of type int
+```
+
+### References to Constants
+
+A reference to const cannot be used to change the value of the object to which it refers.
+
+Example:
+```cpp
+const int a = 10;
+const int &b = a; // b is a reference to a
+
+b = 20; // Error: b is a reference to const
+
+int &c = a; // Error: c is a reference to non-const
+```
+
+You can use a reference to const to initialize a reference to non-const.
+
+Example:
+```cpp
+int a = 20;
+const int &b = a; // we can bind a const int& to a plain int object
+
+const int &c = 42; // ok: we can bind a const int& to a literal
+const int &d = b * 2; // ok: result is a literal
+
+int &e = b * 2; // error: we cannot bind an ordinary int& to a literal
+```
+
+You are able to reference to a different type of object as long as the type of the object can be converted to the type of the reference.
+
+Example:
+```cpp
+double dval = 3.14;
+const int &ri = dval; // ri refers to an int that has the value 3
+// compiler converts dval to an int and binds ri to that int
+```
+
+### Pointers to Constants
+
+- A pointer to const cannot be used to change the value of the object to which it points.
+- A pointer to a const object also has to be defined as a const pointer.
+- You can not assign a value to a pointer to const.
+- When you define a pointer as a const pointer the pointer itself is not a constant it just points to a constant.
+
+Example:
+```cpp
+const double pi = 3.14;
+double *ptr = &pi; // Error: ptr is a pointer to non-const
+
+const double *cptr = &pi; // cptr is a pointer to const
+*cptr = 42; // Error: pi is a const
+
+double dval = 3.14;
+cptr = &dval; // ok: cptr can point to a double but can't change the value of the double
+```
+
+### Constant Pointers
+
+- The pointer itself is a constant and cannot change the address it points to.
+- To define a constant pointer you use the `*` before the `const` keyword.
+
+Example:
+```cpp
+int errNumb = 0;
+int *const curErr = &errNumb; // curErr will always point to errNumb
+
+const double pi = 3.14;
+const double *const pip = &pi; // pip is a constant pointer to a constant object
+```
+
+### Top-Level vs Low-Level Constants
+
+    Top Level -> The pointer itself is a Constant.
+    Low Level -> The value the pointer points to is a Constant.
+
+Example:
+```cpp
+int i = 0;
+int *const p1 = &i; // Top-Level Constant
+
+const int ci = 42;
+const int *p2 = &ci; // Low-Level Constant
+
+const int *const p3 = p2; // Both Top-Level and Low-Level Constant
+
+const int &r = ci; // Low-Level Constant (const in reference types is always Low-Level)
+```
+
+#### Copying Objects
+
+- When we copy an object, top-level const is ignored.
+- When we copy an object, low-level const is preserved.
+
+Example (With the same code as above):
+```cpp
+i = ci; // ok: copy the value of ci (top-level const in ci is ignored)
+p2 = p3; // ok: copy the value of p3 (low-level const in p3 is ignored)
+int *p = p3; // error: copy the value of p3 (low-level const in p3 is not ignored)
+p2 = &i; // ok: copy the address of i (conversion from int* to const int* is allowed)
+int &r = ci; // error: copy the address of ci (conversion from const int* to int& is not allowed)
+const int &r2 = i; // ok: copy the address of i (conversion from int* to const int& is allowed)
+```
+
+### Constant Expressions
+
+- A constant expression is an expression whose value cannot change and that can be evaluated at compile time.
+- A Literal is a constant expression.
+- A const object that is initialized with a constant expression is a constant expression.
+- If a variable is a constant expression depends on how it is initialized.
+
+Example:
+```cpp
+const int max_files = 20; // max_files is a constant expression
+const int limit = max_files + 1; // limit is a constant expression
+int staff_size = 27; // staff_size is not a constant expression
+const int sz = get_size(); // sz is not a constant expression (get_size() cannot be evaluated at compile time)
+```
+
+Examples with `constexpr`:
+```cpp
+constexpr int mf = 20; // mf is a constant expression
+constexpr int limit = mf + 1; // limit is a constant expression
+constexpr int sz = size(); // ok, if size is a constexpr function
+```
+

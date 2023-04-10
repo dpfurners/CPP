@@ -55,3 +55,13 @@ I have documented every day i did something to learn/improve my Programming Skil
 
 ### 28th
 - Compound Data Types ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#compound-data-types))
+- Constants ([docs](https://github.com/dpfurners/CPP/blob/master/09_Variables/Variables.md#constants))
+- References to Constants ([docs](https://github.com/dpfurners/CPP/blob/master/09_Variables/Variables.md#references-to-constants))
+
+## April
+
+### 10th
+- Pointers to Constants ([docs](https://github.com/dpfurners/CPP/blob/master/09_Variables/Variables.md#pointers-to-constants))
+- Constant Pointers ([docs](https://github.com/dpfurners/CPP/blob/master/09_Variables/Variables.md#constant-pointers))
+- High/Low-Level Constants ([docs](https://github.com/dpfurners/CPP/blob/master/09_Variables/Variables.md#high-level-vs-low-level-constants))
+- Constant Expressions ([docs](https://github.com/dpfurners/CPP/blob/master/09_Variables/Variables.md#constant-expressions))
