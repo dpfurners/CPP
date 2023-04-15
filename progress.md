@@ -65,3 +65,7 @@ I have documented every day i did something to learn/improve my Programming Skil
 - Constant Pointers ([docs](https://github.com/dpfurners/CPP/blob/master/09_Variables/Variables.md#constant-pointers))
 - High/Low-Level Constants ([docs](https://github.com/dpfurners/CPP/blob/master/09_Variables/Variables.md#high-level-vs-low-level-constants))
 - Constant Expressions ([docs](https://github.com/dpfurners/CPP/blob/master/09_Variables/Variables.md#constant-expressions))
+
+### 15th
+- Pointers and Constant Expressions ([docs](https://github.com/dpfurners/CPP/blob/master/09_Variables/Variables.md#pointers-and-constant-expressions))
+- Type Aliases ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#type-aliases))

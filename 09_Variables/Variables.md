@@ -265,3 +265,12 @@ constexpr int limit = mf + 1; // limit is a constant expression
 constexpr int sz = size(); // ok, if size is a constexpr function
 ```
 
+### Pointers and Constant Expressions
+- When we define a pointer as a constexpr the pointer itself is a constant expression.
+- A Constant pointer can point to constant and non-constant object.
+
+Example:
+```cpp
+const int *p = nullptr; // p is a pointer to const
+constexpr int *q = nullptr; // p is a constant expression
+```

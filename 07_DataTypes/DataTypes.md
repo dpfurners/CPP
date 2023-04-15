@@ -213,3 +213,20 @@ std::cout << p << std::endl; // prints the adddress of i
 std::cout << *p << std::endl; // prints 42
 ```
 
+## Type Aliases
+- Synonyms for types that already exist
+- Simplifies complex types
+- Emphasizes the meaning of a type
+
+
+### Using `typedef`
+```cpp
+typedef double wages; // wages is a synonym for double
+typedef float percent; // percent is a synonym for float
+```
+
+### Using `using`
+```cpp
+using char = letter; // letter is a synonym for char
+using int = num; // num is a synonym for int
+```
