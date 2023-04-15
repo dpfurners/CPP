@@ -75,3 +75,4 @@ I have documented every day i did something to learn/improve my Programming Skil
 - Operations on Strings ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#operations-on-strings))
 - Array Data Type ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#arrays))
 - Vector Data Type ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#vector-data-type))
+- Project: [TicTacToe](https://github.com/dpfurners/CPP/blob/master/00_Projects/01_TicTacToe)
