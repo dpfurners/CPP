@@ -468,3 +468,58 @@ int i = 42;
 decltype(i) b; // b is an int
 decltype((i)) c; // c is an int& and must be initialized
 ``` 
+
+### Arrays
+- A fixed-size sequence of objects of the same type
+- use `<array>` header or use the standard of `[]` to define an array
+- `array<T, N>` is a template that defines a type named `array<T, N>` that is a container that holds `N` objects of type `T`
+- `array<T, N>` is a class template, not a type
+
+Creating an array:
+```cpp
+array<int, 5> a1; // empty array of 5 ints
+a1 = {1, 2, 3, 4, 5}; // a1 has 5 elements: 1, 2, 3, 4, 5
+for (auto i : a1) {
+    cout << i << endl;
+}
+```
+
+Manipulate an element to an array:
+```cpp
+array<int, 5> a1;
+a1 = {1, 2, 3, 4, 5}; // a1 has 5 elements: 1, 2, 3, 4, 5
+a1[0] = 3; // a1 is now {3, 2, 3, 4, 5}
+a1.at(1) = 4; // a1 is now {3, 4, 3, 4, 5}
+```
+
+
+### Vector Data Type
+- Sequence containers that represent variable-size arrays.
+- use `<vecor>` header
+- `vector<T>` is a template that defines a type named `vector<T>` that is a container that holds objects of type `T`
+- `vector<T>` is a class template, not a type
+
+Creating a vector:
+```cpp
+vector<int> v1; // empty vector of ints
+v1 = {1, 2, 3, 4, 5}; // v1 has 5 elements: 1, 2, 3, 4, 5
+for (auto i : v1) {
+    cout << i << endl;
+}
+```
+
+Adding an element to a vector:
+```cpp
+vector<int> v1;
+v1.push_back(1); // v1 has 1 element: 1
+v1.push_back(2); // v1 has 2 elements: 1, 2
+v1.push_back(3); // v1 has 3 elements: 1, 2, 3
+v1.push_back(4); // v1 has 4 elements: 1, 2, 3, 4
+v1.push_back(5); // v1 has 5 elements: 1, 2, 3, 4, 5
+```
+
+
+
+
+
+

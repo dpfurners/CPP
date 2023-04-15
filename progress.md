@@ -73,3 +73,5 @@ I have documented every day i did something to learn/improve my Programming Skil
 - Decltype Type ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#decltype-type))
 - String Data Type ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#string-data-type))
 - Operations on Strings ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#operations-on-strings))
+- Array Data Type ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#arrays))
+- Vector Data Type ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#vector-data-type))
