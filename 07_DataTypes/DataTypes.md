@@ -230,3 +230,54 @@ typedef float percent; // percent is a synonym for float
 using char = letter; // letter is a synonym for char
 using int = num; // num is a synonym for int
 ```
+
+## Auto Type
+- Used when the type of the variable is unclear
+
+Example:
+```cpp
+auto i = 0; // i is an int
+auto d = 3.14; // d is a double
+auto b = true; // b is a bool
+```
+
+As a declaration:
+```cpp
+auto i = 0, *p = &i; // i is an int, p is a pointer to int
+auto sz = 0, pi = 3.14; // error: sz and pi have different types
+```
+
+## Decltype Type
+- Used to declare a variable that has the same type as its initializer
+- Sets the type of the variable to the type a given expression would have if it were evaluated
+- Does not call the expression
+
+Example:
+```cpp
+decltype(f()) sum = x; // sum has whatever type f returns
+
+const int ci = 0, &cj = ci;
+decltype(ci) x = 0; // x is an const int
+decltype(cj) y = x; // y is a const int& that is bound to x
+
+decltype(cj) z; // error: z is a reference and must be initialized
+```
+
+### Decltype and References
+- When we apply decltype to an exression that is not a variable, we get the type that that expression yields.
+
+Example:
+```cpp
+int i = 42, *p = &i, &r = i;
+decltype(r + 0) b; // b is an int
+decltype(*p) c; // c is an int& and must be initialized
+```
+
+decltype((variable)) is always a reference type, even if variable is not a reference.
+
+Example:
+```cpp
+int i = 42;
+decltype(i) b; // b is an int
+decltype((i)) c; // c is an int& and must be initialized
+``` 

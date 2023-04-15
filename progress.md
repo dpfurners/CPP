@@ -69,3 +69,5 @@ I have documented every day i did something to learn/improve my Programming Skil
 ### 15th
 - Pointers and Constant Expressions ([docs](https://github.com/dpfurners/CPP/blob/master/09_Variables/Variables.md#pointers-and-constant-expressions))
 - Type Aliases ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#type-aliases))
+- Auto Type ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#auto-type))
+- Decltype Type ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#decltype-type))
