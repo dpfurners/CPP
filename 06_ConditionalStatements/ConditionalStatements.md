@@ -2,6 +2,19 @@
 
 A **Conditional Statement** is a programming structure that executes a sequence of instructions if a specific condition is met.
 
+## Comparing Values
+
+- `==` values are equal
+- `!=` values are not equal
+- `>` values on the left are greater than the values on the right
+- `<` values on the left are less than the values on the right
+- `>=` values on the left are greater than or equal to the values on the right
+- `<=` values on the left are less than or equal to the values on the right
+- `&&` if both operands are true, the condition becomes true
+- `||` if either operand is true, the condition becomes true
+- `!` reverses the logical state of its operand
+- `=` assigns a value to a variable
+
 
 ## If-Else Statement
 
