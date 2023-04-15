@@ -71,3 +71,5 @@ I have documented every day i did something to learn/improve my Programming Skil
 - Type Aliases ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#type-aliases))
 - Auto Type ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#auto-type))
 - Decltype Type ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#decltype-type))
+- String Data Type ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#string-data-type))
+- Operations on Strings ([docs](https://github.com/dpfurners/CPP/blob/master/07_DataTypes/DataTypes.md#operations-on-strings))

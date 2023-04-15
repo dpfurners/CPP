@@ -144,9 +144,196 @@ bool b1 = true;
 bool b2 = false;
 ```
 
-## Compound Data Types
+## String Data Type
+- Used to store a sequence of variable-length characters.
+- `<iostream>` header file includes the string but `<string>` is a better option.
 
-Type that is made up of other types.
+Defining/Initializing a string:
+```cpp
+#include <string>       // #include <iostream>
+using std::string;      // using namespace std;
+
+string n1;  // empty string
+string n2 (n1); // n2 is a copy of n1
+string n2 = n1; // equivalent to n2(n1) copy
+string n3 ("value"); // n3 is a copy of the string literal "value"
+string n3 = "value"; // equivalent to n3("value")
+string n4 (10, 'c'); // n4 is "cccccccccc"
+```
+
+### Operations on Strings
+
+#### Reading and Writing Strings
+
+Read one Word at a time:
+```cpp
+string s1;
+cin >> s1;  // read a whitespace-separated string into s1
+// Hello World
+cout << s1 << endl; // write the value of s1 followed by a newline
+// Hello
+``` 
+Read multiple words:
+```cpp
+string s2, s3;
+cin >> s2 >> s3;    // read a whitespace-separated string into s2 and s3
+// World of C++
+cout << s2 << " " << s3 << endl;    // write the value of s2 and s3 followed by a newline
+// World of
+```
+Read an unknown number of words:
+```cpp
+string word;
+while (cin >> word) // read until end-of-file, storing each word into word
+// Hello World of C++     
+cout << word << endl;   // write each word followed by a newline
+// Hello
+// World
+// of
+// C++
+```
+Read an entire line:
+```cpp
+string line;
+while (getline(cin, line))  // read until end-of-file, storing the line into line
+// Hello World of C++
+cout << line << endl;   // write each line followed by a newline
+// Hello World of C++
+```
+
+#### Information about Strings
+
+Empty string operation:
+```cpp
+string s1;  // empty string
+while (getline(cin, s1)) {  // read until end-of-file, storing the line into s1
+    if (!s1.empty()) {  // if s1 is not empty
+        cout << s1 << endl; // write the line we just read
+    }
+    else {
+        cout << "Empty String" << endl;
+    }
+}
+```
+
+Size of a string:
+```cpp
+string s1;
+while (getline(cin, s1)) {  // read until end-of-file, storing the line into s1
+    if (!s1.empty()) {  // if s1 is not empty
+        cout << s1.size() << endl; // write the size of the line we just read
+    }
+    else {
+        cout << "Empty String" << endl;
+    }
+}
+```
+
+Comparing Strings if they are equal:
+```cpp
+string s1 = "Hello", s2 = "World";
+cout << (s1 == s2) << endl; // 0
+cout << (s1 != s2) << endl; // 1
+```
+
+Comparing Strings if they are bigger or smaller:
+1. If the first character that does not match has a greater value in s1 than in s2, then s1 is greater than s2.
+2. If the first character that does not match has a smaller value in s1 than in s2, then s1 is less than s2.
+```cpp
+string s1 = "Hello", s2 = "World";
+cout << (s1 < s2) << endl;  // 1 H is smaller than W (alphabetical order)
+cout << (s1 > s2) << endl;  // 0 H is not bigger than W (alphabetical order)
+
+string s3 = "Hello", s4 = "Hellooo";
+cout << (s3 < s4) << endl;  // 1 s3 is smaller than s4 (length)
+cout << (s3 > s4) << endl;  // 0 s3 is not bigger than s4 (length)
+
+string s1 = "Hello", s2 = "Hellow", s3 = "W";
+cout << (s1 < s2) << endl;  // 1 s1 is smaller than s2 (length)
+cout << (s1 > s2) << endl;  // 0 s1 is not bigger than s2 (length)
+cout << (s1 < s3) << endl;  // 1 s1 is smaller than s3 (alphabetical order)
+cout << (s1 > s3) << endl;  // 0 s1 is not bigger than s3 (alphabetical order)
+```
+
+#### String manipulation
+
+Assigning a string:
+```cpp
+string s1 = "Hello";
+string s2 = s1; // s2 is a copy of s1
+string s3 (3, 'c'); // s3 is "ccc"
+```
+
+Adding two strings:
+```cpp
+string s1 = "Hello", s2 = "World";
+string s3 = s1 + s2;    // s3 is "HelloWorld"
+string s4 = s1;
+s4 += s2;   // s4 is "HelloWorld"
+```
+
+Adding Literals and Strings:
+```cpp
+string s1 = "Hello", s2 = "World";
+string s3 = s1 + ", " + s2 + "!";   // s3 is "Hello, World!"
+string s4 = "Hello" + "World"; // error: can't add two string literals
+string s5 = "Hello" + "World" + s1; // error: can't add two string literals
+```
+
+#### Dealing with individual characters
+- `isalnum(c)` - if c is a letter or a digit (is alphanumeric)
+- `isalpha(c)` - if c is a letter (is alphabetic)
+- `iscntrl(c)` - if c is a control character (is \n, \t, \r, etc.)
+- `isdigit(c)` - if c is a digit
+- `isgraph(c)` - if c is a printing character other than a space
+- `islower(c)` - if c is a lowercase letter
+- `isupper(c)` - if c is an uppercase letter#
+- `isprint(c)` - if c is a printing character (is a space)
+- `ispunct(c)` - if c is a punctuation character (is not a space, letter, or digit)
+- `isspace(c)` - if c is a whitespace character (is " ", \n, \t, \r, etc.)
+- `isxdigit(c)` - if c is a hexadecimal digit (is a digit or a letter from a-f or A-F)
+- `tolower(c)` - convert c to lowercase
+- `toupper(c)` - convert c to uppercase
+
+#### Dealing with every character in a string
+
+Using the `for` loop:
+```cpp
+string s1 = "Hello World";
+for (auto c : s1) {
+    cout << c << endl;
+}
+```
+
+Manually iterating through a string:
+```cpp
+string s1 = "Hello World";
+for (auto &c : s1) {
+    c = toupper(c);
+}
+cout << s1 << endl; // HELLO WORLD
+```
+
+#### Dealing with some characters in a string
+
+Using the subscript operator:
+```cpp
+string s1 = "Hello World";
+if (!s1.empty()) {
+    s1[0] = tolower(s1[0]);
+}
+cout << s1 << endl; // hello World
+```
+
+Capitalize the first word in a string:
+```cpp
+string s1 = "hello world";
+for (decltype(s1.size()) index = 0; index != s1.size() && !isspace(s1[index]); ++index) {
+    s1[index] = toupper(s1[index]);
+}
+cout << s1 << endl; // HELLO world
+```
+
 
 ### References
 
@@ -213,25 +400,25 @@ std::cout << p << std::endl; // prints the adddress of i
 std::cout << *p << std::endl; // prints 42
 ```
 
-## Type Aliases
+### Type Aliases
 - Synonyms for types that already exist
 - Simplifies complex types
 - Emphasizes the meaning of a type
 
 
-### Using `typedef`
+#### Using `typedef`
 ```cpp
 typedef double wages; // wages is a synonym for double
 typedef float percent; // percent is a synonym for float
 ```
 
-### Using `using`
+#### Using `using`
 ```cpp
 using char = letter; // letter is a synonym for char
 using int = num; // num is a synonym for int
 ```
 
-## Auto Type
+#### Auto Type
 - Used when the type of the variable is unclear
 
 Example:
@@ -247,7 +434,7 @@ auto i = 0, *p = &i; // i is an int, p is a pointer to int
 auto sz = 0, pi = 3.14; // error: sz and pi have different types
 ```
 
-## Decltype Type
+### Decltype Type
 - Used to declare a variable that has the same type as its initializer
 - Sets the type of the variable to the type a given expression would have if it were evaluated
 - Does not call the expression
@@ -263,7 +450,7 @@ decltype(cj) y = x; // y is a const int& that is bound to x
 decltype(cj) z; // error: z is a reference and must be initialized
 ```
 
-### Decltype and References
+#### Decltype and References
 - When we apply decltype to an exression that is not a variable, we get the type that that expression yields.
 
 Example:
