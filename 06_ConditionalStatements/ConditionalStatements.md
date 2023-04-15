@@ -4,15 +4,22 @@ A **Conditional Statement** is a programming structure that executes a sequence 
 
 ## Comparing Values
 
+Equality Operators:
 - `==` values are equal
 - `!=` values are not equal
+
+Relational Operators:
 - `>` values on the left are greater than the values on the right
 - `<` values on the left are less than the values on the right
 - `>=` values on the left are greater than or equal to the values on the right
 - `<=` values on the left are less than or equal to the values on the right
+
+Logical Operators:
 - `&&` if both operands are true, the condition becomes true
 - `||` if either operand is true, the condition becomes true
 - `!` reverses the logical state of its operand
+
+Variables:
 - `=` assigns a value to a variable
 
 
