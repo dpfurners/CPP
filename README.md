@@ -13,8 +13,9 @@ So I started the Journey again and started with a Tutorial by[The Cherno](https:
 I learned OOP in C++ by the following video:
 [Object Oriented Programming (OOP) in C++ Course](https://www.youtube.com/watch?v=wN0x9eZLix4)
 
-## My current Progress is also documented [here](https://github.com/dpfurners/CPP/blob/master/progress.md).
+### My current Progress is also documented [here](https://github.com/dpfurners/CPP/blob/master/progress.md).
 
+### My personal C++ Dictionary is [here](https://github.com/dpfurners/CPP/blob/master/dictionary.md)
 
 ## Introduction to C++
 - ... is a general-purpose programming language
