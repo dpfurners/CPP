@@ -1,14 +1,19 @@
 # C++
 I want to learn the C++ Programming Language and want to keep track of my progress in this repo
 
-## Where do i learn from?
+## Where do I learn from?
 I found a tutorial on YT from NESO Academy. If you want to check it out go ahead: 
 [C++ Tutorial](https://www.youtube.com/playlist?list=PLBlnK6fEyqRh6isJ01MBnbNpV3ZsktSyS)
+
+I found out, that the first tutorial i took was never completed, so many important features were not included.
+So I started the Journey again and started with a Tutorial by[The Cherno](https://www.youtube.com/@TheCherno): 
+
+[C++](https://www.youtube.com/playlist?list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)
 
 I learned OOP in C++ by the following video:
 [Object Oriented Programming (OOP) in C++ Course](https://www.youtube.com/watch?v=wN0x9eZLix4)
 
-# My current Progress is also documented [here](https://github.com/dpfurners/CPP/blob/master/progress.md).
+## My current Progress is also documented [here](https://github.com/dpfurners/CPP/blob/master/progress.md).
 
 
 ## Introduction to C++
