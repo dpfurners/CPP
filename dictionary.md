@@ -13,6 +13,18 @@ Steps:
 - Preprocessing
 - Compiling to machine code
 
+## E
+
+#### Error Codes
+
+    There are different error codes that get displayed when compiling, building a cpp file
+
+| Starts With | Description                                 |
+|-------------|---------------------------------------------|
+| C.....      | The error happened while compiling the file |
+| LNK...      | The error happened while linking the files  |
+
+
 ## F
 
 #### Files
@@ -32,6 +44,19 @@ Steps:
 #### Header Files
 
     The Compiler replaces the statement #include "Header.h" with all the code from the header file
+
+
+## L
+
+#### Linker
+
+    "linking" files together that need each other to work
+    The linker needs the entry point (default main)
+    When a function is defined static, and a symbol in it is not found, the linker does not care
+
+Typical Errors:
+- `symbol not found` - The linker cannot find the symbol anywhere
+- `funcion ... already has a body` - function/variable is defined multiple times
 
 
 ## M
