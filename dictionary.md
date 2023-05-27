@@ -94,3 +94,56 @@ int main()
 | #include     | Includes the content of a Header file into the current file      |
 | #define      | Replaces the first word with the second word in the whole code   |
 | #if / #endif | Includes code between to the compiler when the statement is true |
+
+
+#### Primitive Datatype
+
+    Primitive Datatypes are the basic datatypes that are provided by the language.
+    They are not Objects and cannot be extended.
+
+| Datatype    | Size in Bytes | Full Name   | Range                                                    | Unsigned Range                  |
+|-------------|---------------|-------------|----------------------------------------------------------|---------------------------------|
+| char        | 1             | Character   | -128 to 127                                              | 0 to 255                        |
+| short       | 2             | Short       | -32,768 to 32,767                                        | 0 to 65,535                     |
+| int         | 4             | Integer     | -2,147,483,648 to 2,147,483,647                          | 0 to 4,294,967,295              |
+| long        | 4             | Long        | -2,147,483,648 to 2,147,483,647                          | 0 to 4,294,967,295              |
+| long long   | 8             | Long Long   | 	-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | 0 to 18,446,744,073,709,551,615 |
+| float       | 4             | Float       | 3.4E +/- 38 (7 digits)                                   | -                               |
+| double      | 8             | Double      | 1.7E +/- 308 (15 digits)                                 | -                               |
+| long double | 10            | Long Double | 1.7E +/- 308 (15 digits)                                 | -                               |
+| bool        | 1             | Boolean     | true or false                                            | -                               |
+
+## V
+
+#### Variables
+
+    Variables are used to store data in the memory.
+    The difference of the datatypes is the size of the memory.
+    `sizeof()` returns the size of the datatype in bytes
+
+| Datatype    | Description |
+|-------------|-------------|
+| char        | Character   |
+| short       | Short       |
+| int         | Integer     |
+| long        | Long        |
+| long long   | Long Long   |
+| float       | Float       |
+| double      | Double      |
+| long double | Long Double |
+| bool        | Boolean     |
+
+
+The unsigned datatype can only store positive values -> twice as much as the signed ones
+
+Example:
+```cpp
+// Declaration
+int name;
+
+// Initialization
+name = 5;
+
+// Definition
+int name = 5;
+```
