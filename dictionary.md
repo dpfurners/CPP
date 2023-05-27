@@ -19,6 +19,13 @@ Steps:
 
     Overall Files have no meaning in C++. They are just used to feed the compiler with source code.
 
+| Endings | Description                                                   |
+|---------|---------------------------------------------------------------|
+| .cpp    | The source code you write                                     |
+| .obj    | The compiler translates the cpp files into these object files |
+| .h      | The Header file can extend the cpp file                       |
+| .exe    | The file that can be executed                                 |
+
 
 ## H
 
